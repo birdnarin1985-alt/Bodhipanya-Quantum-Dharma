@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodhipanya Quantum Dharma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Reset & Core UI */
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: #050505; /* Deep space black */
+            color: #ffffff;
+            font-family: 'Sarabun', sans-serif;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* 100% Transparent Quantum Engine Background */
+        #quantum-engine {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            pointer-events: none; /* Let clicks pass through */
+        }
+
+        /* Scrollytelling Container */
+        .journal-container {
+            position: relative;
+            z-index: 10;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Module Sections */
+        .module {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 100px 0;
+            background: transparent; /* 100% Transparent */
+        }
+
+        /* Heavy Text-Shadow for Ultimate Readability */
+        .text-glow {
+            text-shadow: 
+                2px 2px 0px #000, 
+                -2px -2px 0px #000, 
+                2px -2px 0px #000, 
+                -2px 2px 0px #000,
+                0px 0px 15px rgba(0,0,0,0.9),
+                0px 0px 30px rgba(0,0,0,0.9);
+        }
+
+        h1 { font-size: 3rem; color: #FFD700; margin-bottom: 10px; }
+        h2 { font-size: 2rem; color: #00FFFF; margin-bottom: 20px; border-bottom: 2px solid #00FFFF; display: inline-block; padding-bottom: 5px; }
+        h3 { font-size: 1.5rem; color: #FF4500; }
+        p, li { font-size: 1.2rem; line-height: 1.8; margin-bottom: 15px; font-weight: 300; }
+        .quote { font-style: italic; color: #32CD32; border-left: 4px solid #32CD32; padding-left: 15px; margin: 20px 0; font-size: 1.3rem; }
+        
+        .master-directive {
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 50px 0;
+            font-size: 1rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Quantum Physics Engine Canvas -->
+    <canvas id="quantum-engine"></canvas>
+
+    <!-- Journal Content -->
+    <div class="journal-container">
+        
+        <!-- Hero Section / Master Directive -->
+        <section class="module text-glow" id="intro">
+            <h1>Bodhipanya Quantum Dharma</h1>
+            <p><strong>วารสารธรรมะวิศวกรรม: ถอดรหัสระบบจิตผ่านเลนส์ควอนตัมฟิสิกส์</strong></p>
+            
+            <div class="master-directive">
+                <h3 style="color: #FFD700;">📜 ปณิธานการขับเคลื่อน (Master Directive)</h3>
+                <p>โปรเจกต์ยานพาหนะแห่งธรรมะคันนี้ ขอประกาศตนเป็นสมบัติของชาติและของมวลมนุษยชาติ สร้างขึ้นเพื่อสืบสานพระราชปณิธานของพระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร ในการปลดเปลื้องความทุกข์ยากของประชาราษฎร์ และน้อมรับซอร์สโค้ดแห่งการหลุดพ้นจาก พระราชพรหมยาน (หลวงพ่อฤาษีลิงดำ)</p>
+                <p>ข้าพเจ้า <strong>นายนรินทร์ อินชัย (ช่างเบิร์ดโคตรเฟี้ยว)</strong> ขอพลีชีพรับหน้าที่เป็นคนขับรถบรรทุกคันนี้ เพื่อลำเลียงสัจธรรมอันบริสุทธิ์ ผ่านระบบปฏิบัติการ 'คณิตศาสตร์และวิศวกรรมทางธรรม' ทะลวงฝ่าความทุรกันดารทางจิตใจ นำพาสันติสุขและความตระหนักรู้ไปสู่มวลมนุษย์และวิศวกรทั่วโลก เพื่อให้ทุกดวงจิตได้เข้าถึงสภาวะสมดุลอย่างแท้จริง</p>
+            </div>
+            <p style="margin-top:50px; text-align:center; font-size:0.9rem;">( เลื่อนลงเพื่อเริ่มเดินเครื่องยนต์ควอนตัม ⬇ )</p>
+        </section>
+
+        <!-- Module 01 -->
+        <section class="module text-glow" data-state="1">
+            <h2>Module 01: System Overload (อุปาทานขันธ์ ๕)</h2>
+            <p><strong>⚙️ System Status:</strong> ระบบเกิดความตึงเครียดสูง (High Stress & Strain) นำไปสู่การ Overheat และ System Crash (ความทุกข์)</p>
+            <p><strong>🔬 Engineering Logic: Hooke’s Law (F = -kx)</strong><br>เมื่อจิต (Observer) เอาตัวเองไปผูกติดกับวัตถุที่แปรปรวน (ขันธ์ 5/ร่างกาย) ยิ่งยึดแน่น (ค่า k สูง) และยิ่งวัตถุนั้นเสื่อมสลาย (ระยะ x เพิ่ม) แรงตึงเครียด (F) ในใจก็ยิ่งมหาศาล</p>
+            <div class="quote">"รูป เวทนา สัญญา สังขาร วิญญาณ ไม่ใช่เรา ไม่ใช่ของเรา" - ซอร์สโค้ด หลวงพ่อฤาษีลิงดำ</div>
+            <p><strong>🛠️ Troubleshooting:</strong> ลดค่า k (ความยึดมั่นถือมั่น) ให้เข้าใกล้ศูนย์ ปลดสายสลิงออกจากสิ่งที่ควบคุมไม่ได้</p>
+        </section>
+
+        <!-- Module 02 -->
+        <section class="module text-glow" data-state="2">
+            <h2>Module 02: Thermodynamic Equilibrium (อารมณ์พระนิพพาน)</h2>
+            <p><strong>⚙️ System Status:</strong> จิตฟุ้งซ่าน วุ่นวาย ไหลไปตามกิเลสและตัณหา เหมือนอนุภาคที่ถูกต้มในน้ำเดือด (High Entropy)</p>
+            <p><strong>🔬 Engineering Logic: Zero Entropy & Ground State</strong><br>ตราบใดที่ยังมีกิเลสเป็น "ความร้อน" (Thermal Energy) ป้อนเข้าสู่ระบบ อนุภาคจิตก็จะชนกันวุ่นวาย (Entropy เพิ่มขึ้น) เมื่อตัดวงจรจ่ายไฟ ระบบจะเข้าสู่ Ground State ที่เสถียรที่สุด</p>
+            <div class="quote">"นิพพานัง ปรมัง สุญญัง" (นิพพานเป็นความว่างอย่างยิ่ง ว่างจากความวุ่นวาย)</div>
+            <p><strong>🛠️ Troubleshooting:</strong> ดับไฟแห่งตัณหา ปล่อยให้อนุภาคจิตเย็นลงสู่ความราบเรียบสมบูรณ์แบบ ไร้การเสียดทาน</p>
+        </section>
+
+        <!-- Module 03 -->
+        <section class="module text-glow" data-state="3">
+            <h2>Module 03: Causality Network (กฎแห่งกรรม)</h2>
+            <p><strong>⚙️ System Status:</strong> การเกิดบั๊กสะสมในระบบโดยไม่รู้ตัว จากความเข้าใจผิดว่า Action บางอย่างไม่มีใครเห็น</p>
+            <p><strong>🔬 Engineering Logic: Action = Reaction & Wave Propagation</strong><br>ในโครงข่าย Quantum Field ทุกโหนดเชื่อมโยงกัน (Entangled) เมื่อมีการกระทำใดๆ มันจะสร้าง "คลื่น" (Ripple) แผ่ออกไป และคลื่นนั้นจะสะท้อนกลับมาหาจุดกำเนิดเสมอ</p>
+            <div class="quote">"ทำดีได้ดี ทำชั่วได้ชั่ว กรรมเป็นเผ่าพันธุ์"</div>
+            <p><strong>🛠️ Troubleshooting:</strong> ระวังการป้อน Data Input (กาย วจี มโน) ในระบบปิดของจักรวาล ไม่มีคำว่า Data Loss ทุกข้อมูลจะถูกประมวลผลกลับมาแน่นอน 100%</p>
+        </section>
+
+        <!-- Module 04 -->
+        <section class="module text-glow" data-state="4">
+            <h2>Module 04: Subsystem Isolation (ตัดขันธ์ ๕ ยามป่วย)</h2>
+            <p><strong>⚙️ System Status:</strong> เมื่อ Hardware (ร่างกาย) แจ้งเตือนข้อผิดพลาด (เจ็บปวด) User มักให้ Software (จิตใจ) แครชตามไปด้วย</p>
+            <p><strong>🔬 Engineering Logic: System Decoupling (การแยกส่วนระบบ)</strong><br>เซนเซอร์รับความเจ็บปวดเป็นแค่ Error Alert ของ Hardware ต้องทำการถอดปลั๊กจิต (OS) ออกจากร่างกาย แยกผู้สังเกตการณ์ออกมา</p>
+            <div class="quote">"พิจารณาแยกรูป แยกนาม... กายป่วย แต่ใจไม่ป่วย"</div>
+            <p><strong>🛠️ Troubleshooting:</strong> รันคำสั่ง "Unplug" ถอยออกมาเป็นเพียง Observer มองเห็น Error Code โดยรู้ว่านั่นคือความขัดข้องของเครื่องจักร ไม่ใช่ตัวเรา</p>
+        </section>
+
+        <!-- Module 05 -->
+        <section class="module text-glow" data-state="5">
+            <h2>Module 05: Entangled Field (พรหมวิหาร ๔)</h2>
+            <p><strong>⚙️ System Status:</strong> ระบบนิเวศมีคลื่นความถี่ตีกันมั่ว (Interference) ทำให้เกิดความทุกข์แผ่ขยาย</p>
+            <p><strong>🔬 Engineering Logic: Quantum Entanglement & Harmonic Resonance</strong><br>จูนคลื่นความถี่จิตให้เกิดสั่นพ้อง (Resonance) ระดับสูง ส่งคลื่น เมตตา กรุณา มุทิตา อุเบกขา เพื่อเหนี่ยวนำ (Induce) โหนดรอบข้างให้กลับมาเสถียร</p>
+            <div class="quote">"การเจริญพรหมวิหาร ๔ คือการทำจิตให้เสมอกับพรหม เป็นจิตที่เยือกเย็นและไม่มีขอบเขต"</div>
+            <p><strong>🛠️ Troubleshooting:</strong> อัปเกรดตัวเองเป็น Master Node ปล่อยสัญญาณ Wi-Fi แห่งความเมตตา เยียวยาเครือข่ายทั้งหมดแบบไร้สาย</p>
+        </section>
+
+        <div class="footer text-glow">
+            <p>จัดทำด้วยความมุ่งมั่นและโยนิโสมนสิการ - สัมปะติฉามิ! 🙏</p>
+            <p>Driver: ช่างเบิร์ดโคตรเฟี้ยว (นรินทร์ อินชัย)</p>
+        </div>
+    </div>
+
+    <!-- The Quantum Engine Logic -->
+    <script>
+        const canvas = document.getElementById('quantum-engine');
+        const ctx = canvas.getContext('2d');
+        
+        let width, height;
+        let particles = [];
+        const numParticles = 2000; // Represents the 3,000 nodes theoretically
+        let currentState = 0;
+        let time = 0;
+
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        // Initialize Nodes
+        for(let i = 0; i < numParticles; i++) {
+            particles.push({
+                x: Math.random() * width,
+                y: Math.random() * height,
+                baseX: Math.random() * width,
+                baseY: Math.random() * height,
+                angle: Math.random() * Math.PI * 2,
+                radius: Math.random() * 200 + 50,
+                speed: Math.random() * 0.02 + 0.005,
+                color: '#ffffff'
+            });
+        }
+
+        // Engine Loop
+        function animate() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.2)'; // Trailing effect
+            ctx.fillRect(0, 0, width, height);
+            
+            let cx = width / 2;
+            let cy = height / 2;
+            time += 0.01;
+
+            particles.forEach(p => {
+                let targetX = p.x;
+                let targetY = p.y;
+                let size = 1.5;
+                p.color = '#00ffff'; // Default cyan
+
+                // State Physics Logic
+                if(currentState === 0) {
+                    // Intro: Gentle ambient float
+                    targetX = p.baseX + Math.sin(p.angle + time) * 30;
+                    targetY = p.baseY + Math.cos(p.angle + time) * 30;
+                    p.color = 'rgba(255, 215, 0, 0.6)'; // Gold
+                } 
+                else if (currentState === 1) {
+                    // Overload (Hooke's Law): High tension, pulling to center erratically
+                    let dx = cx - p.baseX;
+                    let dy = cy - p.baseY;
+                    let dist = Math.sqrt(dx*dx + dy*dy);
+                    let tension = Math.sin(time * 5 + dist * 0.01) * 100; // Stress
+                    targetX = p.baseX + dx * 0.5 + Math.random() * tension - tension/2;
+                    targetY = p.baseY + dy * 0.5 + Math.random() * tension - tension/2;
+                    p.color = 'rgba(255, 69, 0, 0.8)'; // Red/Orange stress
+                }
+                else if (currentState === 2) {
+                    // Nirvana (Zero Entropy): Perfect concentric circles, smooth
+                    p.angle += p.speed * 0.2; // Slow down
+                    targetX = cx + Math.cos(p.angle) * p.radius;
+                    targetY = cy + Math.sin(p.angle) * p.radius;
+                    p.color = 'rgba(200, 255, 255, 0.8)'; // Pure white/cyan
+                }
+                else if (currentState === 3) {
+                    // Causality (Karma): Ripple waves from center
+                    let dist = Math.sqrt(Math.pow(p.baseX - cx, 2) + Math.pow(p.baseY - cy, 2));
+                    let wave = Math.sin(dist * 0.05 - time * 3) * 50;
+                    targetX = p.baseX + (p.baseX - cx) / dist * wave;
+                    targetY = p.baseY + (p.baseY - cy) / dist * wave;
+                    p.color = wave > 0 ? '#ff00ff' : '#00ff00'; // Duality
+                }
+                else if (currentState === 4) {
+                    // Subsystem Isolation: Observer (center) calm, Hardware (outer) red & vibrating
+                    let dist = Math.sqrt(Math.pow(p.baseX - cx, 2) + Math.pow(p.baseY - cy, 2));
+                    if(dist < 150) {
+                        // Observer: Calm, disconnected
+                        targetX = cx + Math.cos(p.angle) * (dist * 0.5);
+                        targetY = cy + Math.sin(p.angle) * (dist * 0.5);
+                        p.color = '#ffffff';
+                    } else {
+                        // Hardware: Pain alert
+                        targetX = p.baseX + Math.random() * 20 - 10;
+                        targetY = p.baseY + Math.random() * 20 - 10;
+                        p.color = 'rgba(255, 0, 0, 0.5)';
+                    }
+                }
+                else if (currentState === 5) {
+                    // Entangled Field: Golden resonant network
+                    p.angle += p.speed * 0.5;
+                    targetX = p.baseX + Math.sin(p.angle * 2) * 40;
+                    targetY = p.baseY + Math.cos(p.angle * 2) * 40;
+                    p.color = 'rgba(255, 215, 0, 0.9)'; // Golden compassion
+                    
+                    // Draw entanglement lines for a few particles
+                    if(Math.random() > 0.99) {
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(cx, cy);
+                        ctx.strokeStyle = 'rgba(255, 215, 0, 0.05)';
+                        ctx.stroke();
+                    }
+                }
+
+                // Smooth interpolation for physics movement
+                p.x += (targetX - p.x) * 0.05;
+                p.y += (targetY - p.y) * 0.05;
+
+                // Draw node
+                ctx.fillStyle = p.color;
+                ctx.fillRect(p.x, p.y, size, size);
+            });
+
+            requestAnimationFrame(animate);
+        }
+        animate();
+
+        // Scrollytelling: Intersection Observer to change Quantum States
+        const sections = document.querySelectorAll('section');
+        const observerOptions = { root: null, threshold: 0.5 };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    const state = entry.target.getAttribute('data-state');
+                    if(state !== null) {
+                        currentState = parseInt(state);
+                    } else {
+                        currentState = 0; // Intro
+                    }
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(sec => observer.observe(sec));
+    </script>
+</body>
+</html>
